@@ -1,0 +1,212 @@
+footer {
+  width: 100vw;
+  min-width: 320px;
+
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--bg-alternate-color);
+  & .logo {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-bottom: 20px;
+    color: var(--main-color);
+  }
+  & address {
+    margin-bottom: 9px;
+
+    color: var(--main-color);
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .container.centered {
+    @media screen and (min-width: 769px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+  }
+}
+
+.footer-studio {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 769px) {
+    margin-left: 76px - 15px;
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 70px;
+    margin-bottom: 0px;
+
+    text-align: start;
+  }
+  & .footer-contact {
+    display: block;
+    margin-bottom: 8px;
+
+    color: var(--textoppacity-color);
+
+    font-size: 14px;
+    line-height: 1.71;
+
+    transition: color var(--transition-time-cubic);
+    &:last-child {
+      margin-bottom: 60px;
+      @media screen and (min-width: 769px) {
+        margin-bottom: 0px;
+      }
+    }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+.footer-form {
+  @media screen and (min-width: 769px) {
+    flex-grow: 1;
+  }
+  @media screen and (min-width: 1201px) {
+    flex-grow: 0;
+    text-align: start;
+  }
+}
+
+.footer-connect {
+  @media screen and (min-width: 769px) {
+    margin-right: 89px - 15px;
+  }
+  @media screen and (min-width: 1201px) {
+    margin-right: 93px;
+    text-align: start;
+  }
+  & p {
+    margin: 0px 0px 20px;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--main-color);
+  }
+  & ul {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    & li:not(:last-child) {
+      margin-right: 10px;
+      margin-bottom: 60px;
+      @media screen and (min-width: 769px) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
+
+  transition: background-color var(--transition-time-cubic);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+  & .footer-icon {
+    fill: var(--main-color);
+  }
+}
+
+.footer-mailing {
+  & .footer-mailing_description {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+  }
+  & div {
+    @media screen and (min-width: 1201px) {
+      display: flex;
+    }
+    & .footer-mailing_filed {
+      padding: 15px 16px;
+      width: calc(100% - 30px);
+      margin-bottom: 20px;
+
+      background-color: var(--bg-alternate-color);
+
+      color: #ffffff99;
+      font-size: 16px;
+      line-height: 1.25;
+
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      @media screen and (min-width: 769px) {
+        max-width: unset;
+        width: 450px;
+      }
+      @media screen and (min-width: 1201px) {
+        width: 358px;
+        margin-bottom: 0px;
+      }
+      &:placeholder-shown {
+        color: #ffffff99;
+      }
+    }
+  }
+  & .footer-mailing_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    padding: 10px 29px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+
+    color: var(--main-color);
+    background-color: var(--accent-color);
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    @media screen and (min-width: 1201px) {
+      margin-left: 10px;
+    }
+  }
+}
+
+.footer-icon_send {
+  fill: var(--main-color);
+  margin-left: 10px;
+}

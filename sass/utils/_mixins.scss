@@ -1,0 +1,96 @@
+// Container
+
+@mixin container($w, $wm, $pl, $pr) {
+  max-width: $w;
+  min-width: $wm;
+  padding-left: $pl;
+  padding-right: $pr;
+}
+
+// Centered by margin
+
+@mixin centered {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Section padding
+
+@mixin section-padding($h) {
+  padding-top: $h;
+  padding-bottom: $h;
+  width: 100vw;
+}
+
+// Flex
+
+@mixin flex-center($al: center, $jf: center) {
+  display: flex;
+  align-items: $al;
+  justify-content: $jf;
+}
+
+// Backdrop
+
+@mixin backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  z-index: 100;
+  opacity: 1;
+
+  transition: opacity var(--transition-time-cubic);
+}
+
+@mixin hidden {
+  opacity: 0;
+  pointer-events: none;
+  //   visibility: none;
+}
+
+//button
+
+@mixin button($pl, $pr, $color, $bg-c) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: $pl;
+  padding-right: $pr;
+
+  color: $color;
+  background-color: $bg-c;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+//fonts
+
+//main font
+
+@mixin font-Roboto($f-weight, $f-size, $f-height, $color, $l-spacing) {
+  // not used
+  font-style: normal;
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $f-height;
+
+  letter-spacing: $l-spacing;
+
+  color: $color;
+}
+// END
