@@ -1,0 +1,36 @@
+container {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 720px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1080px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+https://medium.com/@dan.postnov/%D0%BC%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BA%D0%BD%D0%B0-%D0%BD%D0%B0-javascript-30-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%BA%D0%BE%D0%B4%D0%B0-dbbb599649f3
+
+плавный скрол на якоря
+
+ice cream before - after
+
+ctrl - shift 4 - полоски
+
+https://github.com/dykyys/le-corte/blob/main/index.html  джейквери
+
+https://www.youtube.com/watch?v=ukg8YWFbxUo&t=1325s&ab_channel=%D0%98%D0%B2%D0%B0%D0%BD%D0%9C%D0%B5%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%B2  слайдер
+
+https://gist.github.com/luxplanjay/6f6936b1bba7afe006fa9317b07b6045#file-visually-hidden-css - патерн спрятан
+
+https://animate.style/
+
